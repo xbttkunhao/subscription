@@ -17,7 +17,7 @@ apps.forEach((appConfig) => {
 export default defineGkdSubscription({
   id: 233,
   name: 'Subscription',
-  version: 1,
+  version: 2,
   author: 'xbttkunhao',
   checkUpdateUrl: './gkd.version.json5',
   supportUri: 'https://github.com/gkd-kit/subscription-template',
