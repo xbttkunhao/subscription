@@ -576,7 +576,7 @@ export default defineGkdApp({
     },
     {
       key: 26,
-      name: '首页广告-火箭推流',
+      name: '局部广告-火箭推流',
       desc: '点击更多-点击我不想看',
       fastQuery: true,
       activityIds: 'tv.danmaku.bili.MainActivityV2',
