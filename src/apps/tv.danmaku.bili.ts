@@ -574,5 +574,25 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 26,
+      name: '首页广告-火箭推流',
+      desc: '点击更多-点击我不想看',
+      fastQuery: true,
+      activityIds: 'tv.danmaku.bili.MainActivityV2',
+      rules: [
+        {
+          key: 1,
+          matches:
+            '@ImageView[childCount=0] < FrameLayout[vid="inline_more"] - TextView <3 ViewGroup',
+          snapshotUrls: 'https://i.gkd.li/i/25411434',
+        },
+        {
+          preKeys: [1],
+          matches: '@[text="我不想看"] < [clickable=true]',
+          snapshotUrls: 'https://i.gkd.li/i/25411436',
+        },
+      ],
+    },
   ],
 });
