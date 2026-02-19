@@ -44,6 +44,25 @@ export default defineGkdApp({
       ],
     },
     {
+      key: 2,
+      name: '分段广告-动态推荐卡片广告',
+      desc: '点击卡片右上角[广告]按钮-点击不感兴趣',
+      fastQuery: true,
+      activityIds: 'tv.danmaku.bili.MainActivityV2',
+      rules: [
+        {
+          key: 1,
+          matches: '[id="tv.danmaku.bili:id/ad_goods_mark_big"]',
+          snapshotUrls: 'https://i.gkd.li/i/12700222',
+        },
+        {
+          preKeys: [1],
+          matches: '[text="不感兴趣"][id^="tv.danmaku.bili:id/reason"]',
+          snapshotUrls: 'https://i.gkd.li/i/12700243',
+        },
+      ],
+    },
+    {
       key: 23,
       name: '首页广告-火箭推流广告',
       desc: '点击更多-点击我不想看',
@@ -60,25 +79,6 @@ export default defineGkdApp({
           preKeys: [1],
           matches: '@[text="我不想看"] < [clickable=true]',
           snapshotUrls: 'https://i.gkd.li/i/25411436',
-        },
-      ],
-    },
-    {
-      key: 2,
-      name: '分段广告-动态推荐卡片广告',
-      desc: '点击卡片右上角[广告]按钮-点击不感兴趣',
-      fastQuery: true,
-      activityIds: 'tv.danmaku.bili.MainActivityV2',
-      rules: [
-        {
-          key: 1,
-          matches: '[id="tv.danmaku.bili:id/ad_goods_mark_big"]',
-          snapshotUrls: 'https://i.gkd.li/i/12700222',
-        },
-        {
-          preKeys: [1],
-          matches: '[text="不感兴趣"][id^="tv.danmaku.bili:id/reason"]',
-          snapshotUrls: 'https://i.gkd.li/i/12700243',
         },
       ],
     },
