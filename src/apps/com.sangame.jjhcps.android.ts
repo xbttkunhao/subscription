@@ -20,7 +20,7 @@ export default defineGkdApp({
     },
     {
       key: 2,
-      name: '首页右下角广告',
+      name: '局部广告-首页右下角广告',
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'app',
