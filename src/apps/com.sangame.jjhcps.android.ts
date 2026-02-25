@@ -35,7 +35,7 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '资讯页中部广告',
+      name: '分段广告-资讯页中部广告',
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'activity',
@@ -50,7 +50,7 @@ export default defineGkdApp({
     },
     {
       key: 4,
-      name: '资讯页信息流广告',
+      name: '分段广告-资讯页信息流广告',
       fastQuery: true,
       actionMaximum: 1,
       resetMatch: 'activity',
