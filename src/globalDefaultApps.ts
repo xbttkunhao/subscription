@@ -322,6 +322,7 @@ export const openAdBlackListAppIDs = new Set([
   ...blackListAppIDs,
   'com.taptap', // TapTap
   'com.sankuai.meituan', // 美团 误触 https://i.gkd.li/i/17827264
+  'com.sangame.jjhcps.android', // 金投网
 ]);
 
 // 更新提示黑名单
